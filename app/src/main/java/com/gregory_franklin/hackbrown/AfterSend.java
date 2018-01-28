@@ -11,10 +11,14 @@ import android.widget.Button;
 
 public class AfterSend extends AppCompatActivity {
 
+    public String message;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after_send);
+
+        message = getIntent().getStringExtra("MESSAGE");
 
 
         Button home = (Button) findViewById(R.id.home);
@@ -22,6 +26,7 @@ public class AfterSend extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AfterSend.this, HomeActivity.class);
+                intent.putExtra("MESSAGE", message);
                 startActivity(intent);
             }
         });

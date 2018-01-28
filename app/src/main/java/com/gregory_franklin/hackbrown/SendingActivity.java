@@ -10,23 +10,31 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class SendingActivity extends Activity {
-    private Button sendCompliment;
-    private EditText writeCompliment;
+    public Button sendCompliment;
+    public EditText writeCompliment;
+    public String message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sending);
 
-        Button sendCompliment = findViewById(R.id.sendCompliment);
+        writeCompliment = findViewById(R.id.writeCompliment);
+        sendCompliment = findViewById(R.id.sendCompliment);
         sendCompliment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(writeCompliment.getText()!=null) {
+                    message = writeCompliment.getText().toString();
+                }
                 Intent intent = new Intent(SendingActivity.this, AfterSend.class);
+                intent.putExtra("MESSAGE", message);
                 startActivity(intent);
             }
 
         });
+
+
 
 
     }

@@ -11,16 +11,21 @@ import android.widget.Button;
 
 public class Read extends AppCompatActivity {
 
+    public String message;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_read);
+
+        message = getIntent().getStringExtra("MESSAGE");
 
         Button read = findViewById(R.id.read);
         read.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Read.this, open.class);
+                intent.putExtra("MESSAGE", message);
                 startActivity(intent);
             }
 
