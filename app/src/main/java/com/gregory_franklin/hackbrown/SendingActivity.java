@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class SendingActivity extends Activity {
     private Button sendCompliment;

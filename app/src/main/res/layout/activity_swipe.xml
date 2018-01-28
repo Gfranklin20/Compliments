@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bluebackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.gregory_franklin.hackbrown.SendingActivity">
@@ -23,7 +24,9 @@
         android:id="@+id/horizontalScrollView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:scrollbars="horizontal">
+        android:scrollbars="horizontal"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="161dp">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -32,8 +35,8 @@
 
             <ImageView
                 android:id="@+id/contact1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="255dp"
+                android:layout_height="265dp"
                 android:layout_marginBottom="100dp"
                 android:layout_marginEnd="200dp"
                 android:layout_marginLeft="200dp"
@@ -50,14 +53,14 @@
 
             <ImageView
                 android:id="@+id/contact2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="255dp"
+                android:layout_height="265dp"
                 android:layout_marginBottom="100dp"
                 android:layout_marginEnd="200dp"
                 android:layout_marginLeft="200dp"
                 android:layout_marginRight="200dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:layout_constraintBottom_toTopOf="@+id/sendButton"
@@ -66,94 +69,149 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/realwindow" />
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:background="#00f"
-                android:padding="10dp"
-                android:text="Button 3"
-                android:textColor="#fff"
-                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/contact3"
+                android:layout_width="255dp"
+                android:layout_height="265dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/sendButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/realwindow" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:background="#ff0"
-                android:padding="10dp"
-                android:text="Button 4"
-                android:textColor="#fff"
-                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/contact4"
+                android:layout_width="255dp"
+                android:layout_height="265dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/sendButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/realwindow" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:background="#f0f"
-                android:padding="10dp"
-                android:text="Button 5"
-                android:textColor="#fff"
-                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/contact5"
+                android:layout_width="255dp"
+                android:layout_height="265dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/sendButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/realwindow" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:background="#f90"
-                android:padding="10dp"
-                android:text="Button 6"
-                android:textColor="#fff"
-                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/contact6"
+                android:layout_width="255dp"
+                android:layout_height="265dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/sendButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/realwindow" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:background="#f00"
-                android:padding="10dp"
-                android:text="Button 7"
-                android:textColor="#ff9"
-                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/contact7"
+                android:layout_width="255dp"
+                android:layout_height="265dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/sendButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/realwindow" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:background="#444"
-                android:padding="10dp"
-                android:text="Button 8"
-                android:textColor="#fff"
-                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/contact8"
+                android:layout_width="255dp"
+                android:layout_height="265dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/sendButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/realwindow" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:background="#ff002211"
-                android:padding="10dp"
-                android:text="Button 9"
-                android:textColor="#fff"
-                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/contact9"
+                android:layout_width="255dp"
+                android:layout_height="265dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/sendButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/realwindow" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:background="#0f0"
-                android:padding="10dp"
-                android:text="Button 10"
-                android:textColor="#fff"
-                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/contact10"
+                android:layout_width="255dp"
+                android:layout_height="265dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/sendButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/realwindow" />
 
         </LinearLayout>
 
