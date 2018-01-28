@@ -2,40 +2,39 @@ package com.gregory_franklin.hackbrown;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class HomeActivity extends AppCompatActivity {
+public class AfterSend extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_after_send);
 
-        Button sendButton = findViewById(R.id.sendButton);
-        sendButton.setOnClickListener(new View.OnClickListener() {
+
+        Button home = (Button) findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, Swipe.class);
+                Intent intent = new Intent(AfterSend.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button sendanother = findViewById(R.id.sendanother);
+        sendanother.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AfterSend.this, Swipe.class);
                 startActivity(intent);
             }
 
         });
-
-        Button read = findViewById(R.id.read);
-        read.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, Read.class);
-                startActivity(intent);
-            }
-
-        });
-
-
-
     }
 
 }

@@ -17,13 +17,17 @@ public class SendingActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sending);
-        sendCompliment = findViewById(R.id.sendCompliment);
-        writeCompliment = findViewById(R.id.writeCompliment);
+
+        Button sendCompliment = findViewById(R.id.sendCompliment);
         sendCompliment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(sendCompliment, writeCompliment.getText(), Snackbar.LENGTH_LONG).show();
+                Intent intent = new Intent(SendingActivity.this, AfterSend.class);
+                startActivity(intent);
             }
+
         });
+
+
     }
 }

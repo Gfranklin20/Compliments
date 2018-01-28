@@ -24,6 +24,18 @@
             android:name=".Swipe"
             android:label="@string/title_activity_swipe"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AfterSend"
+            android:label="@string/title_activity_after_send"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Read"
+            android:label="@string/title_activity_read"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".open"
+            android:label="@string/title_activity_open"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
